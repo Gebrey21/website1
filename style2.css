@@ -1,0 +1,97 @@
+
+*{margin: 0px;
+  padding: 0px;
+  font-family: century;
+  }
+header{
+   background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(mk1.jpg);
+   height: 14vh ;
+   background-size: cover;
+   background-position: center;
+   background: position 100px;
+     } 
+ul{
+  float: right;
+  list-style-type: none;
+  margin-top: 19px;
+  min-height: 350px;
+  margin-right: 50px;
+  font-size: 15px;
+}
+ul li{
+  display: inline-block;
+
+}
+ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.6 ease;
+}
+
+ul li a:hover{
+  background-color: #0fff;
+  color: #000;
+}
+
+ul li.active a{
+  background-color: #fff;
+  color: #000;
+}
+
+.mkulogo  img{
+  position: absolute;
+   left:1%;
+  width: 8%;
+  height: auto;
+}
+.main{
+  max-width: 1200px;
+  margin: auto;
+}
+.gebre {
+  position:absolute;
+  top: 120%;
+  left: 99%;   
+  transform:translate( -50%, -50%) ;
+}
+.gebre p{
+  background-color: green;
+  color: #000;
+  font-size: 20px;
+}
+.gebre p :hover{color: blue;}
+.ab  img{
+  position: absolute;
+  top: 38%;
+  left: 36%;
+  width: 60%;
+  height: 94%
+}
+.cd {
+  position:absolute;
+  top: 26%;
+  left: 38%; 
+  font-size: 80px; 
+  background-color: indigo;
+  color: blue; 
+  transform:translate( -50%, -50%) ;
+}
+  .info {
+position: absolute;
+top: 71%;
+left: 230px;
+transform:translate( -50%, -50%) ;
+}
+
+.info h1 {
+  color: rgb(36, 32, 30);
+  font-size: 50px;
+} 
+.info h3{
+  font-size: 20px;
+  letter-spacing: normal;
+  line-height: 20px;       
+
+}
