@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta  charset="uTF-8">
+        <title>Gebreys Tech</title>
+
+        <style>
+body
+  {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; 
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("aboupro1.png"); 
+}
+.contact-title{
+    margin-top: 55px;
+    color:black;
+    text-transform: none;
+   transition: all 0.6s ease-in-out;
+    text-align: center;
+}
+.contact-title h1{
+     font-size: 50px;
+     line-height: 10px;
+}
+.contact-title h2{
+    font-size: 21px;
+}
+.contact-title h3 {
+                 font-size: 23p;
+                  }
+  .form-control{
+      width: 200px;
+      background: transparent;
+      border: solid;
+      outline: none;
+      border-radius: 10px;
+      border-bottom: 1px solid double gold;
+      color: black;
+      font-size: 18px;
+}
+input {
+    height: 30px;
+}
+form [type="submit"]{
+  background: red;
+  border-color: transparent;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  height: 35px;
+  margin-top: 20px;
+  border-radius: 50px;
+}
+
+form .submit:hover{
+    background-color: blue;
+    cursor:pointer;
+}   
+ .row h6{
+    text-align:center;
+    font-size: 200%;
+}
+.row img{
+height: 15%;
+width: 15%;
+}
+.footer
+   {
+    background: #000;
+    height: 75px;
+    color: #ffff;
+    text-align: center;
+ }
+
+
+        </style>
+    </head>
+<body >
+    <div>
+         <div  class="contact-title">
+          <h1>Hello</h1>
+          <h2>I have always real-on  to respond you for any :-</h2>
+          <h3>Questions, salutation,<br>comment and soon.Based <br>on the following methods.</h3>
+    </div>
+     <div  class="contact-form">
+        <form id="contact-form" method="post" action="respome.html" onsubmit="sendEmail(); reset(); return false;">
+            <input id="name" type="text" class="form-control" placeholder="Your Name" required ><br><br>
+            <input id="email" type="email" class="form-control" placeholder="Your Email" required ><br><br>
+            <input id="phone" type="text" class="form-control" placeholder="Your phone no." required ><br><br>
+            <textarea id="message"  class="form-control" placeholder="How Can I Help You?" rows="3" required ></textarea><br><br>
+            <button type="submit" class="form-control submit" >send message</button>
+        </form>
+    </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+           <script>
+               function sendEmail(){
+                              Email.send({
+                                      Host:"smtp.gmail.com",
+                                      Username:"Gebrey Asfaw",
+                                      Password:"hana128@.t",
+                                      To:'aladorgebrey128@gmail.com',
+                                      From:document.getElementById("email").value,
+                                      Subject:"New Contact Form Enquiry",
+                                      Body:"Name: " + document.getElementById("name").value
+                                           + " <br> Email: " + document.getElementById("email").value
+                                           + " <br> Phone no: " + document.getElementById("phone").value
+                                           + " <br> Message: " + document.getElementById("message").value
+                                        }).then(
+                                            messsage => alert("Message sent succesfully" )
+                                                );
+                                   }
+            </script>
+        </div> 
+                 <h4 style="color: forestgreen;  font-size: 180px;" ><marquee behavior="scroll"direction="left"  ><i> JOIN TO BIG DREAM  WEBSITE!!!</i></marquee> </h4>
+                <pre style="font-size: 30px;text-align: center;letter-spacing: normal;font-style: oblique; ">
+     The following are our other social media channels.Hello! guise  to exchange ,<br>
+     improve,manage  and to proof  maltiple contente in todays technology life; <br>   
+      please  conntact me to go Mutualy too,to succese for their problem solutions.<br>
+       you can join through  following site(media channel) by double click or selecte <br> 
+        then copy to open on your web-browser. </pre>
+                   <div class="row">
+                          <img src="call.jpg" alt="calling icon">
+                          <h6>+251939000434</h6>
+                          <img src="gmail.jpg" alt="Email icon">
+                          <h6>AladorGebrey128@gmail.com</h6>
+                          <img src="telegram (1).svg" alt="Tellegram icon">
+                           <h6>@Tewelde_Gebrey<h6>
+                    </div>
+                <div class="footer  text-center" >
+                    <div style="font-style: italic;font-size: 30px;">January 10,2025 G.C by <span style="font-size: 40px;   color: peru;">G</span>ebrey <SPan style="font-size: 40px; color: peru;">A</SPan>sfaw.</H1><br>
+                 <span    style="font-size: 25px; font-style: oblique;">&copy;ALL RIGHTS RESERVED!</span>
+                </div>     
+</body>
+</html>
